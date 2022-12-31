@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: 'Elsie', cursive;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+h5{
+    padding: 5px;
+}
+
+/* estilo header */
+#cabecalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, #000, #373d42);
+    color: white;
+    position: fixed;
+}
+
+#menu{
+    display: flex;
+    width: 400px;
+    justify-content: center;
+}
+
+#menu > li > a{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 4px;
+    color: white;
+    transition: transform 2s;
+}
+
+#menu > li{
+    padding: 20px;
+}
+
+#menu > li:hover{
+    transform: scale(1.01);
+}
+
+#menu > li > a:hover{
+    border-bottom: 1px solid white;
+}
+
+
+/* parte do header / ínicio do perfil */
+#sub-cabecalho{
+    height: 550px;
+    width: 100%;
+    background: linear-gradient(to right, #000, #262a2d);
+    display: flex;
+    color: white;
+}
+
+#perfil-geral{
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+#perfil{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* div da imagem de perfil */
+#img-profile{
+    display: flex;
+    margin-top: 50px;
+    align-self: center;
+}
+
+#img-profile>img{
+    width: 200px;
+    border-radius: 15px;
+}
+
+/* div do nome / div pai do h1 */
+
+#nome-habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nome{
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    align-self: center;
+    padding-left: 10px;
+}
+#container-habilidades{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    padding-left: 10px;
+}
+
+#container-habilidades > ul > li > img{
+    width: 20px;
+}
+#container-habilidades > ul > li{
+    padding: 3px;
+}
+/* div pai do sobre-mim */
+#info{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 100px;
+}
+
+#sobre-mim{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#sobre-mim > h2{
+    margin-top: 20px;
+}
+
+#sobre-mim > p{
+    color: white;
+    text-indent: 20px;
+    font-size: 19px;
+    padding: 20px;
+}
+
+/* edicao dos icones (linkedin, github) */
+#redes{
+    display: flex;
+    justify-content: end;
+    align-self: end;
+    width: 6%;
+    height: auto;
+    padding: 5px;
+}
+
+#icones{
+    height: 10%;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#linkedin > a,
+#github > a{
+    color: #000;
+    transition: transform 2s;
+}
+#linkedin:hover{
+    transform: scale(1.1);
+}
+#github:hover{
+    transform: scale(1.1);
+}
+
+/* Início da edição do container interesses e hobbies */
+#container-hobbies{
+    background: #ccd1d5;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+
+#caixa1, #caixa2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+}
+
+#caixa1> p, #caixa2> p{
+    padding: 30px;
+    height: 50px;
+    background: #373d42;
+    align-self: center;
+    margin: 5px;
+    border-radius: 5px;
+    text-indent: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #fafafa;
+}
+
+/* container da imagem dos hobbies */
+#container-img-hobbies{
+    display: flex;
+    background: #ccd1d5;
+    justify-content: space-around;
+    padding: 20px
+}
+
+.div-img-hobbies > img{
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid blue;
+    transition: transform 0.2s;
+}
+
+.div-img-hobbies{
+    transition: transform 0.3s;
+}
+
+.div-img-hobbies:hover{
+    transform: scale(1.13);
+    align-self: center;
+}
+
+/* container do formulario */
+#contato{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#formulario{
+    background: #373d42;
+    border: 1px solid rgb(35, 35, 108);
+    border-radius: 5px;
+    height: 450px;
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fafafa;
+}
+
+#formulario > form > h2{ 
+    text-align: start; 
+    margin: 10px;
+}
+
+.input{
+    width: 300px;
+    height: 23px;
+    border-radius: 5px;
+    border: 1px solid rgb(35, 35, 108);
+    background: #000;
+    color: #fafafa;
+    text-indent: 2px;
+    padding: 2px;
+}
+
+label{
+    padding: 5px;
+}
+
+span{
+    padding: 3px;
+    display: block;
+}
+
+textarea{
+    border-radius: 5px;
+    border: 1px solid rgb(35, 35, 108);
+    background: #000;
+    color: #fafafa;
+    text-indent: 2px;
+    padding: 5px;
+}
+
+#rodape{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #000, #262a2d);
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
