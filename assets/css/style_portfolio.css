@@ -312,6 +312,15 @@ textarea{
     padding: 5px;
 }
 
+#botao-enviar{
+    height: 30px;
+    border-radius: 2px;
+    width: 50px;
+    align-self: center;
+    color: #fafafa;
+    background: #000;
+}
+
 #rodape{
     width: 100%;
     height: 50px;
