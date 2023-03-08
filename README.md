@@ -1,1 +1,1 @@
-<h1 text-align="center"> Portfolio </h1>
+<h1 align="center"> Portfolio </h1>
