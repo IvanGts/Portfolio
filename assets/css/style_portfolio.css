@@ -188,15 +188,18 @@ h5{
 
 #linkedin > a,
 #github > a{
-    color: #000;
+    color: #ccd1d5;
     transition: transform 2s;
 }
+
 #linkedin:hover{
     transform: scale(1.1);
 }
+
 #github:hover{
     transform: scale(1.1);
 }
+
 
 /* Início da edição do container interesses e hobbies */
 #container-hobbies{
@@ -312,6 +315,7 @@ textarea{
     text-indent: 2px;
     padding: 5px;
     max-height: 200px;
+    resize: none;
 }
 
 #botao-enviar{
